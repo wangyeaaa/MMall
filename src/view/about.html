@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%= require('html-loader!./layout/head-common.html') %>
+    <title><%=htmlWebpackPlugin.options.title%> - happymmall电商平台</title>
+</head>
+<body>
+<%= require('html-loader!./layout/nav.html') %>
+<%= require('html-loader!./layout/header.html') %>
+<div class="crumb">
+    <div class="w">
+        <div class="crumb-con">
+            <a href="./index.html" class="link">MMall</a>
+            <span> > </span>
+            <span class="link-text"><%=htmlWebpackPlugin.options.title%></span>
+        </div>
+    </div>
+</div>
+<div class="page-wrap w">
+    <%= require('html-loader!./layout/nav-side.html') %>
+
+    <div class="content with-nav">
+        <div class="panel">
+            <div class="panel-title"><%=htmlWebpackPlugin.options.title%></div>
+            <div class="panel-body">
+                <div class="intro">
+                    <p>
+                        这是我的第一个项目实战，作为一个前段小白在这个课程里学到不少的知识，以前只有零散的，琐碎的基础。从来没有
+                    系统的做过一个项目，通过这次的实战，让我对前端模块化开发有了一定的了解，webpack打包 git仓库代码的管理
+                        以及前后端的对接 数据交互 前端界面利用模板渲染等。这些都让我受益匪浅，期待以后能更进一步吧！ ————王裕华
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%= require('html-loader!./layout/footer.html') %>
+</body>
+</html>
